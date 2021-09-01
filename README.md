@@ -1,19 +1,13 @@
-<h1 align="center">README GENERATOR</h1>
+<h1 align="center">README.md Generator Using Node.js</h1>
 
 <a name="description"></a>
 ## Description
-hdssnjfh 
+ A node.js application that uses user input from inquirer to populate a README.md file for user repository.
 
-
-jfdscb
-
-
-bfs wjeqk dmq wkk 
-
-<a name="table_of_contents"></a>
+<a name="toc"></a>
 ## Table of Contents
 - [Description](#description)
-- [Table of Contents](#table_of_contents)
+- [Table of Contents](#toc)
 - [Installation](#installation)  
 - [Usage](#usage)
 - [License](#license)  
@@ -23,41 +17,15 @@ bfs wjeqk dmq wkk
 
 <a name="installation"></a>
 ## Installation
-hdssnjfh 
+npm init
 
-
-jfdscb
-
-
-bfs wjeqk dmq wkk hdssnjfh 
-
-
-jfdscb
-
-
-bfs wjeqk dmq wkk 
+npm install inquirer
 
 <a name="usage"></a>
 ## Usage
-hdssnjfh 
+Run the following command at th root of your project and answer the prompted questions:
 
-
-jfdscb
-
-
-bfs wjeqk dmq wkk hdssnjfh 
-
-
-jfdscb
-
-
-bfs wjeqk dmq wkk hdssnjfh 
-
-
-jfdscb
-
-
-bfs wjeqk dmq wkk 
+node index.js
 
 <a name="license"></a>
 ## License
@@ -65,65 +33,11 @@ Make a reservation
 
 <a name="contributing"></a>
 ## Contributing
-hdssnjfh 
-
-
-jfdscb
-
-
-bfs wjeqk dmq wkk hdssnjfh 
-
-
-jfdscb
-
-
-bfs wjeqk dmq wkk hdssnjfh 
-
-
-jfdscb
-
-
-bfs wjeqk dmq wkk hdssnjfh 
-
-
-jfdscb
-
-
-bfs wjeqk dmq wkk 
+[Christian G. Flores](https://github.com/florsu)
 
 <a name="tests"></a>
 ## Tests
-hdssnjfh 
-
-
-jfdscb
-
-
-bfs wjeqk dmq wkk hdssnjfh 
-
-
-jfdscb
-
-
-bfs wjeqk dmq wkk hdssnjfh 
-
-
-jfdscb
-
-
-bfs wjeqk dmq wkk hdssnjfh 
-
-
-jfdscb
-
-
-bfs wjeqk dmq wkk hdssnjfh 
-
-
-jfdscb
-
-
-bfs wjeqk dmq wkk 
+jest
 
 <a name="questions"></a>
 ## Questions

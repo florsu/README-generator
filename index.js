@@ -102,12 +102,12 @@ ${data.license}
 
 <a name="contributing"></a>
 ## Contributing
-${data.contributing}
+${data.contributing} (https://github.com/${data.github_id})
 
 <a name="tests"></a>
 ## Tests
 ${data.tests}
-
+ 
 <a name="questions"></a>
 ## Questions
 ${data.github_id} (https://github.com/${data.github_id})
