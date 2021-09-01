@@ -3,82 +3,116 @@ const path = require("path");
 const inquirer = require("inquirer");
 const generateMarkdown = require("./utils/generateMarkdown");
 
-const inputtypeTextKey = 'text'
+const inputtypeText = 'input'
+const inputtypeList = 'list'
+const inputtypeEditor = 'editor'
 
 
 // array of questions for user
 const questions = [
     {
-        key: 'title',
+        name: 'title',
         message: 'Title',
-        type: inputtypeTextKey,
+        type: inputtypeText,
     },
     {
-        key: 'description',
+        name: 'description',
         message: 'Description',
-        type: inputtypeTextKey,
+        type: inputtypeEditor,
     },
     {
-        key: 'installation',
+        name: 'installation',
         message: 'Installation',
-        type: inputtypeTextKey,
+        type: inputtypeEditor,
     },
     {
-        key: 'usage',
+        name: 'usage',
         message: 'Usage',
-        type: inputtypeTextKey,
+        type: inputtypeEditor,
     },
     {
-        key: 'contributing',
+        name: 'license',
+        message: 'License',
+        type: inputtypeList,
+        choices: [
+            'Order a pizza',
+            'Make a reservation',
+            new inquirer.Separator(),
+            'Ask for opening hours',
+            {
+                name: 'Contact support',
+                disabled: 'Unavailable at this time',
+            },
+            'Talk to the receptionist',
+        ],
+    },
+    {
+        name: 'contributing',
         message: 'Contributing',
-        type: inputtypeTextKey,
+        type: inputtypeEditor,
     },
     {
-        key: 'questions',
-        message: 'Questions',
-        type: inputtypeTextKey,
+        name: 'tests',
+        message: 'Tests',
+        type: inputtypeEditor,
+    },
+    {
+        name: 'github_id',
+        message: 'Github ID',
+        type: inputtypeText,
+    },
+    {
+        name: 'email_address',
+        message: 'Email address',
+        type: inputtypeText,
     },
 
 ]
-/*
-[
-    
-    //'Table of Contents',
-    //'License',
-    //'Tests',
-    
-]
-*/
 
 // function to write README file
 function writeToFile(fileName, data) {
-    let content = `
-## Title
-${data.title}
+    let content = `<h1 align="center">${data.title}</h1>
 
+<a name="description"></a>
 ## Description
 ${data.description}
 
+<a name="toc"></a>
 ## Table of Contents
-TODO
+- [Description](#description)
+- [Table of Contents](#toc)
+- [Installation](#installation)  
+- [Usage](#usage)
+- [License](#license)  
+- [Contributing](#contributing)  
+- [Tests](#tests)
+- [Questions](#questions)  
 
+<a name="installation"></a>
 ## Installation
 ${data.installation}
 
+<a name="usage"></a>
 ## Usage
 ${data.usage}
 
+<a name="license"></a>
 ## License
-TODO
+${data.license}
 
+<a name="contributing"></a>
 ## Contributing
 ${data.contributing}
 
+<a name="tests"></a>
 ## Tests
-TODO
+${data.tests}
 
+<a name="questions"></a>
 ## Questions
-${data.questions}
+${data.github_id} (https://github.com/${data.github_id})
+
+For additional questions, contact me at ${data.email_address} 
 `
 
 
@@ -93,31 +127,12 @@ ${data.questions}
 
 // function to initialize program
 function init() {
-    //console.log(questions)
-    let answers = {}
+    inquirer.prompt(questions).then((answers) => {
+        console.log(JSON.stringify(answers, null, '  '))
+        writeToFile('README.md', answers)
+    })
 
-    for (let i = 0; i < questions.length; i++) {
-        let questionObj = questions[i]
-        // console.log(questionObj)
-        let lookup = questionObj.key
-        let answer = askQuestion(questionObj)
-        console.log(`answer '${answer}'`)
-        console.log('-----------------')
-        answers[lookup] = answer
-    }
-    console.log(answers)
-    writeToFile('README.md', answers)
 }
 
 // function call to initialize program
-init();
-
-function askQuestion(questionObj) {
-    //console.log(questionObj)
-    let question = questionObj.message
-
-    //console.log(question)
-    console.log(`askQuestion '${questionObj}', '${question}'`)
-
-    return `${question},answered`
-}
+init()
