@@ -4,7 +4,11 @@
 
 <a name="description"></a>
 ## Description
+<<<<<<< HEAD
 This is a node.js application that uses user input from inquirer to populate a README.md file for user repository.
+=======
+ This is a node.js application that uses user input from inquirer to populate a README.md file for user repository.
+>>>>>>> bf2144fb602473073c463e6f0ff8c2a85b5f1450
 
 <a name="toc"></a>
 ## Table of Contents
