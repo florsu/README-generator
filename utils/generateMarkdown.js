@@ -33,7 +33,7 @@ ${data.license}
 
 <a name="contributing"></a>
 ## Contributing
-${data.contributing} (https://github.com/${data.github_id})
+${data.contributing} 
 
 <a name="tests"></a>
 ## Tests
@@ -41,9 +41,7 @@ ${data.tests}
 
 <a name="questions"></a>
 ## Questions
-${data.github_id} (https://github.com/${data.github_id})
-
-For additional questions, contact me at ${data.email_address} 
+ For additional questions, contact me at ${data.email_address} / ${data.github_id}
 `
 }
 
