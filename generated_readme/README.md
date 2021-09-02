@@ -4,7 +4,7 @@
 
 <a name="description"></a>
 ## Description
-This is a node.js application that uses user input from inquirer to populate a README.md file for user repository.
+
 
 <a name="toc"></a>
 ## Table of Contents
@@ -43,4 +43,4 @@ Unit tests are TBD.
 
 <a name="questions"></a>
 ## Questions
- For additional questions, contact me at christiangflores0824@gmail.com / florsu
+ For additional questions, contact me at christiangflores0824@gmail.com / [github id]florsu
