@@ -25,7 +25,7 @@ npm install inquirer
 
 <a name="usage"></a>
 ## Usage
-Run the following command at th root of your project and answer the prompted questions:
+Run the following command at the root of your project and answer the prompted questions:
 
 node index.js
 
@@ -35,7 +35,8 @@ Mozilla
 
 <a name="contributing"></a>
 ## Contributing
-Create a pull request or contact me via email below.
+
+
 
 <a name="tests"></a>
 ## Tests
@@ -43,4 +44,4 @@ Unit tests are TBD.
 
 <a name="questions"></a>
 ## Questions
-For additional questions, contact me at christiangflores0824@gmail.com /  (https://github.com/florsu)
+For additional questions, contact me at christiangflores0824@gmail.com / https://github.com/florsu
