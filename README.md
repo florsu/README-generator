@@ -35,7 +35,7 @@ Mozilla
 
 <a name="contributing"></a>
 ## Contributing
-
+Create a pull request or contact me via email below.
 
 
 <a name="tests"></a>
