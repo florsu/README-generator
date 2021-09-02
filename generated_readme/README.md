@@ -6,6 +6,7 @@
 ## Description
 This is a node.js application that uses user input from inquirer to populate a README.md file for user repository.
 
+
 <a name="toc"></a>
 ## Table of Contents
 - [Description](#description)
@@ -35,7 +36,7 @@ Mozilla
 
 <a name="contributing"></a>
 ## Contributing
-Create a pull request or contact me via email below.  
+Create a pull request or contact me via email below. 
 
 <a name="tests"></a>
 ## Tests
@@ -43,4 +44,4 @@ Unit tests are TBD.
 
 <a name="questions"></a>
 ## Questions
- For additional questions, contact me at christiangflores0824@gmail.com / https://github.com/florsu
+ For additional questions, contact me at christiangflores0824@gmail.com / florsu
