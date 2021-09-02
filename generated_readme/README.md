@@ -35,7 +35,7 @@ Mozilla
 
 <a name="contributing"></a>
 ## Contributing
-Create a pull request or contact me via email below.
+Create a pull request or contact me via email below. (https://github.com/florsu)
 
 <a name="tests"></a>
 ## Tests
@@ -43,4 +43,6 @@ Unit tests are TBD.
 
 <a name="questions"></a>
 ## Questions
-For additional questions, contact me at christiangflores0824@gmail.com /  (https://github.com/florsu)
+florsu (https://github.com/florsu)
+
+For additional questions, contact me at christiangflores0824@gmail.com 
