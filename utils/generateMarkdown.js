@@ -41,7 +41,7 @@ ${data.tests}
 
 <a name="questions"></a>
 ## Questions
- For additional questions, contact me at ${data.email_address} / ${data.github_id}
+ For additional questions, contact me at ${data.email_address} / [github id]${data.github_id}
 `
 }
 
